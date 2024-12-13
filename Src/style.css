@@ -1,24 +1,128 @@
-body{
+/* body{
     background-image: url("../images/WALLPAPER\ SALON.jpg");
-    background opacity: 43;
     background-size:1400px;
     background-repeat: no-repeat;
     
+} */
+
+.home {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
 }
+
+.home::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/WALLPAPER\ SALON.jpg");
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: exposure; /* Apply blur effect */
+  z-index: -1; /* Place the pseudo-element behind content */
+}
+
+.home-main {
+  position: relative;
+  z-index: 1; /* Ensure the content is on top of the blurred background */
+  padding: 20px;
+  color: white;
+  font-size: 24px;
+}
+
+
 
 .navdiv{
     display:flex;
+    justify-content: space-between;
     margin: 30px;
 
 }
 
 .logo{
 height: 100px;
-width: 100px;
+opacity: 0.9;
+width: 200px;
 }
 
-.smalldiv{
-    text-align:right;
-    display: inline-flex;
-   
+.nav{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+    background-color: rgb(52, 51, 51);
+    width: 500px;
+    
 }
+a{
+    text-decoration: none;
+}
+
+.salon{
+   color: goldenrod; 
+   background-color: darkslategray;
+   opacity: 0.5;
+   width: 50px;
+   height: 20px;
+}
+
+.About{
+    color: goldenrod;
+}
+ .Hair{
+    color: goldenrod;
+ }
+
+ .Beauty{
+    color: goldenrod;
+ }
+
+ .BookUs{
+    color: goldenrod;
+ }
+  .braids{
+    height: 100px;
+    width: 100px;
+    /* border-radius: ; */
+  }
+/* 
+  .text{
+    color: white;
+    justify-content: space-evenly;
+    background-color: yellow; */
+    
+   
+  .one-link{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* height: 100px; */
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .div1{
+    display: flex;
+    color: white;
+    padding: 10px;
+    width: 40%;
+    background-color: #F5BD05;
+    border-radius: 60px 100px 0 50px;
+    margin-bottom: 10px;
+    
+    
+  }
+  .div1 img{
+    width: 70px;
+    height: 60px;
+    border-radius: 50px 100px 0 50px;
+    margin-bottom: 10px;
+  }
+
+
+  
+ 
+ 
